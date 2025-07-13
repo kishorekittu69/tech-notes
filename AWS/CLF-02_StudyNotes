@@ -54,6 +54,40 @@ AWS Regions
     AWS has Global Services:
         Identity and Access Management (IAM)
 
+ AWS after login, we can choose a region from the top right corner of the console that are close to your region.
+ I have selected  the Asia Pacific (Mumbai) ap-south-1 region.
+
+ Some services are global, such as IAM, Route 53, CloudFront, and others.
+    These services are not region-specific and can be accessed from any region.
+    Other services are region-specific, such as EC2, S3, RDS, and others.
+    These services are only available in the region that you select.
+
+https://aws.amazon.com/about-aws/global-infrastructure/  will give lot of information about AWS global services.
+    AWS Global Infrastructure
+    AWS has a global network of data centers, edge locations, and regional edge caches that deliver content to end users with low latency.
+    AWS has a global network of edge locations and regional edge caches that deliver content to end users with low latency.
+    AWS has a global network of data centers that provide high availability and redundancy for your applications.
+    AWS has a global network of edge locations and regional edge caches that deliver content to end users with low latency.
+    AWS has a global network of data centers that provide high availability and redundancy for your applications.
+
+
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/?p=ngi&loc=4
+ provides information about the services available in each region.
+
+
+ Shared Responsibility model :
+    Customer: Responsibility for the security in the cloud
+        Customer is responsible for the security of their applications, data, and operating systems.
+        Customer is responsible for the security of their AWS account, including access control and authentication.
+        Customer is responsible for the security of their network, including firewalls and VPNs.
+    AWS: Responsibility for the security of the cloud
+
+
+IAM: Users and Groups
+    IAM = Identity and Access Management, it is a Global service
+
+
+
 
 
 
