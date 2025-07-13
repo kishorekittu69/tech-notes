@@ -7,3 +7,53 @@ AWS Global Infrastructure
   AWS Data Centers
   AWS Edge Locations/Points of Presence
 https://infrastructure.aws/
+
+AWS Regions
+    AWS has Regions all around the world
+    Names can be us-east-1, eu-west-3...
+    A region is a cluster of data centers in a specific geographical area
+    Most AWS services are region-scoped
+
+
+    Notes:
+    Region means:
+    A region is a geographical area that contains multiple Availability Zones
+    A region is a physical location in the world where we have multiple Availability Zones
+
+
+ HOW TO CHOOSE AN AWS REGION?
+    If you need to launch a new application, where should you do it?
+    Its depends on:
+       COMPLIANCE: Compliance requirements with data governance and legal requirements: data never leaves a region without your explicit permission
+       PROXIMITY: Proximity to customers: lower latency or reduced latency( means to increase the speed of data transfer, if most of the users resides in
+        american continent, then you should choose a region in the US, suppose user resides in australia and you deployed in US region they
+        may have face lag in accessing the application).
+       AVAILABLE SERVICES: Available services within a region: new services and new features aren't available in every region.
+       (If you leveraging the application, then you should choose the region where the service is available).
+       PRICING: Pricing differences between regions: some regions are more expensive than others.
+
+
+
+ AWS Availability Zones
+    Each region has many availability     zones  minimum is 3 and maximum is 6
+    Each availability zone (AZ) is one or more discrete data cernters with redundant power, networking, and connectivity in an AWS Region.
+    Each AZ is isolated, but the AZs in a region are connected through low-latency links.
+    AZs are designed to be independent from each other, so that if one AZ goes down, the others can still function.
+    They're seperate from each other, so that they're isolated from disasters.
+    They're connected with high bandwidth, ultra-low latency network connections.
+
+ AWS Points of Presence(Edge Locations)
+    Amazon has 400+ points of presence (PoPs) (400+ Edge locations & 10+ Regional Caches) in 90+ cities across 40+ countries.
+    AWS has a global network of edge locations and regional edge caches that deliver content to end users with low latency.
+    Edge locations are used for caching content, such as static files, and for serving dynamic content.
+    Regional edge caches are used to cache content closer to end users, reducing latency and improving performance.
+    AWS CloudFront is the content delivery network (CDN) service that uses these edge locations and regional edge caches to deliver content to end users.
+    Content is delivered to end users with lower latency.
+
+ Tour of the AWS Console
+    AWS has Global Services:
+        Identity and Access Management (IAM)
+
+
+
+
